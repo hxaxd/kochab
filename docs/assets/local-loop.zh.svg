@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="252" viewBox="0 0 980 252" font-family="-apple-system,'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#72827b"/>
+    </marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#287970"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="979" height="251" rx="14" fill="#ffffff" stroke="#dce5e0"/>
+
+  <rect x="31" y="20" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="267" y="20" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="503" y="20" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="739" y="20" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+
+  <g text-anchor="middle">
+    <text x="136" y="52" font-size="15" font-weight="600" fill="#1f332f">业务需求</text>
+    <text x="136" y="76" font-size="10.5" fill="#1f332f" opacity="0.75">来自真实业务</text>
+
+    <text x="372" y="52" font-size="15" font-weight="600" fill="#1f332f">环境 · 评测集 · 验证器</text>
+    <text x="372" y="76" font-size="10.5" fill="#1f332f" opacity="0.75">需求拆解为可检验的任务</text>
+
+    <text x="608" y="52" font-size="15" font-weight="600" fill="#1f332f">执行与轨迹</text>
+    <text x="608" y="76" font-size="10.5" fill="#1f332f" opacity="0.75">运行任务，保留证据</text>
+
+    <text x="844" y="52" font-size="15" font-weight="600" fill="#1f332f">错误归因</text>
+    <text x="844" y="76" font-size="10.5" fill="#1f332f" opacity="0.75">失败发生在哪一层</text>
+  </g>
+
+  <g stroke="#72827b" stroke-width="1.6">
+    <line x1="243" y1="60" x2="261" y2="60" marker-end="url(#ag)"/>
+    <line x1="479" y1="60" x2="497" y2="60" marker-end="url(#ag)"/>
+    <line x1="715" y1="60" x2="733" y2="60" marker-end="url(#ag)"/>
+    <line x1="844" y1="100" x2="844" y2="136" marker-end="url(#ag)"/>
+  </g>
+
+  <rect x="739" y="138" width="210" height="80" rx="10" fill="#287970"/>
+  <rect x="503" y="138" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="267" y="138" width="210" height="80" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+
+  <g text-anchor="middle">
+    <text x="844" y="171" font-size="17" font-weight="600" fill="#ffffff">紫微</text>
+    <text x="844" y="195" font-size="10.5" fill="#dcebe7">调查证据 · 修改运行框架</text>
+
+    <text x="608" y="171" font-size="15" font-weight="600" fill="#1f332f">外部复测</text>
+    <text x="608" y="195" font-size="10.5" fill="#1f332f" opacity="0.75">原任务 + 回归任务</text>
+
+    <text x="372" y="171" font-size="15" font-weight="600" fill="#1f332f">判断</text>
+    <text x="372" y="195" font-size="10.5" fill="#1f332f" opacity="0.75">保留或放弃</text>
+  </g>
+
+  <g stroke="#72827b" stroke-width="1.6">
+    <line x1="737" y1="178" x2="715" y2="178" marker-end="url(#ag)"/>
+    <line x1="501" y1="178" x2="479" y2="178" marker-end="url(#ag)"/>
+  </g>
+
+  <path d="M372 218 L372 236 L844 236 L844 222" fill="none" stroke="#287970" stroke-width="1.5" marker-end="url(#at)"/>
+  <text x="608" y="230" font-size="11" font-weight="500" fill="#287970" text-anchor="middle">下一轮</text>
+</svg>

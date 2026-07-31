@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="236" viewBox="0 0 980 236" font-family="-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#72827b"/>
+    </marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#287970"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="979" height="235" rx="14" fill="#ffffff" stroke="#dce5e0"/>
+
+  <rect x="14" y="20" width="158" height="88" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="190" y="20" width="132" height="88" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="340" y="20" width="150" height="88" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="508" y="20" width="150" height="88" rx="10" fill="#287970"/>
+  <rect x="676" y="20" width="132" height="88" rx="10" fill="#f6f2e9" stroke="#e7dfc9"/>
+  <rect x="826" y="20" width="140" height="88" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+
+  <g text-anchor="middle">
+    <text x="93" y="48" font-size="11" font-weight="600" fill="#1f332f">Complete training chain</text>
+    <text x="93" y="67" font-size="9.5" fill="#1f332f" opacity="0.75">instruction following</text>
+    <text x="93" y="81" font-size="9.5" fill="#1f332f" opacity="0.75">compression · commonsense</text>
+    <text x="93" y="95" font-size="9.5" fill="#1f332f" opacity="0.75">programming · GUI use</text>
+
+    <text x="256" y="52" font-size="11" font-weight="600" fill="#1f332f">Mature substrate</text>
+    <text x="256" y="71" font-size="9.5" fill="#1f332f" opacity="0.75">coding agents</text>
+    <text x="256" y="85" font-size="9.5" fill="#1f332f" opacity="0.75">GUI agents</text>
+
+    <text x="415" y="52" font-size="11" font-weight="600" fill="#1f332f">Vertical agents</text>
+    <text x="415" y="71" font-size="9.5" fill="#1f332f" opacity="0.75">business requirement</text>
+    <text x="415" y="85" font-size="9.5" fill="#1f332f" opacity="0.75">environment · benchmark</text>
+    <text x="415" y="99" font-size="9.5" fill="#1f332f" opacity="0.75">verifier</text>
+
+    <text x="583" y="44" font-size="11" font-weight="600" fill="#ffffff">Evaluation-driven</text>
+    <text x="583" y="58" font-size="11" font-weight="600" fill="#ffffff">development</text>
+    <text x="583" y="78" font-size="9.5" fill="#dcebe7">humans can — so can AI</text>
+
+    <text x="742" y="52" font-size="11" font-weight="600" fill="#1f332f">Real deployment</text>
+    <text x="742" y="71" font-size="9.5" fill="#1f332f" opacity="0.75">data flywheel</text>
+    <text x="742" y="85" font-size="9.5" fill="#1f332f" opacity="0.75">bad &amp; good traces</text>
+
+    <text x="896" y="52" font-size="11" font-weight="600" fill="#1f332f">Stronger models</text>
+    <text x="896" y="74" font-size="9.5" fill="#1f332f" opacity="0.75">better harnesses</text>
+  </g>
+
+  <g stroke="#72827b" stroke-width="1.6">
+    <line x1="174" y1="64" x2="187" y2="64" marker-end="url(#ag)"/>
+    <line x1="324" y1="64" x2="337" y2="64" marker-end="url(#ag)"/>
+    <line x1="492" y1="64" x2="505" y2="64" marker-end="url(#ag)"/>
+    <line x1="660" y1="64" x2="673" y2="64" marker-end="url(#ag)"/>
+    <line x1="810" y1="64" x2="823" y2="64" marker-end="url(#ag)"/>
+  </g>
+
+  <g fill="none" stroke="#287970" stroke-width="1.5">
+    <path d="M700 108 L700 146 L930 146 L930 109" marker-end="url(#at)"/>
+    <path d="M682 108 L682 182 L415 182 L415 109" marker-end="url(#at)"/>
+    <path d="M950 108 L950 218 L650 218 L650 188 A6 6 0 0 0 650 176 L650 109" marker-end="url(#at)"/>
+  </g>
+
+  <g fill="#287970" text-anchor="middle" font-size="9.5" font-weight="500">
+    <text x="815" y="139">good trajectories → training</text>
+    <text x="528" y="175">bad cases → back into the benchmark</text>
+    <text x="766" y="211">harder business · next round</text>
+  </g>
+</svg>

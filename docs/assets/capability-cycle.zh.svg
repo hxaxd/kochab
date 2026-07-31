@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="236" viewBox="0 0 980 236" font-family="-apple-system,'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#72827b"/>
+    </marker>
+    <marker id="at" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#287970"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="979" height="235" rx="14" fill="#ffffff" stroke="#dce5e0"/>
+
+  <rect x="10" y="20" width="140" height="74" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="174" y="20" width="140" height="74" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="338" y="20" width="140" height="74" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+  <rect x="502" y="20" width="140" height="74" rx="10" fill="#287970"/>
+  <rect x="666" y="20" width="140" height="74" rx="10" fill="#f6f2e9" stroke="#e7dfc9"/>
+  <rect x="830" y="20" width="140" height="74" rx="10" fill="#eff6f2" stroke="#dce5e0"/>
+
+  <g text-anchor="middle">
+    <text x="80" y="49" font-size="15" font-weight="600" fill="#1f332f">完整训练链条</text>
+    <text x="80" y="68" font-size="10.5" fill="#1f332f" opacity="0.75">指令跟随 · 压缩</text>
+    <text x="80" y="82" font-size="10.5" fill="#1f332f" opacity="0.75">常识 · 编程 · GUI 使用</text>
+
+    <text x="244" y="49" font-size="15" font-weight="600" fill="#1f332f">行动底座成熟</text>
+    <text x="244" y="68" font-size="10.5" fill="#1f332f" opacity="0.75">Coding Agent</text>
+    <text x="244" y="82" font-size="10.5" fill="#1f332f" opacity="0.75">GUI Agent</text>
+
+    <text x="408" y="49" font-size="15" font-weight="600" fill="#1f332f">垂类 Agent</text>
+    <text x="408" y="68" font-size="10.5" fill="#1f332f" opacity="0.75">业务需求拆解为</text>
+    <text x="408" y="82" font-size="10.5" fill="#1f332f" opacity="0.75">环境 · 评测集 · 验证器</text>
+
+    <text x="572" y="49" font-size="15" font-weight="600" fill="#ffffff">评测驱动开发</text>
+    <text x="572" y="68" font-size="10.5" fill="#dcebe7">人可以</text>
+    <text x="572" y="82" font-size="10.5" fill="#dcebe7">AI 也可以</text>
+
+    <text x="736" y="49" font-size="15" font-weight="600" fill="#1f332f">真实上线</text>
+    <text x="736" y="68" font-size="10.5" fill="#1f332f" opacity="0.75">数据飞轮</text>
+    <text x="736" y="82" font-size="10.5" fill="#1f332f" opacity="0.75">坏轨迹 · 好轨迹</text>
+
+    <text x="900" y="49" font-size="15" font-weight="600" fill="#1f332f">更强的模型</text>
+    <text x="900" y="75" font-size="10.5" fill="#1f332f" opacity="0.75">更好的运行框架</text>
+  </g>
+
+  <g stroke="#72827b" stroke-width="1.6">
+    <line x1="151" y1="57" x2="170" y2="57" marker-end="url(#ag)"/>
+    <line x1="315" y1="57" x2="334" y2="57" marker-end="url(#ag)"/>
+    <line x1="479" y1="57" x2="498" y2="57" marker-end="url(#ag)"/>
+    <line x1="643" y1="57" x2="662" y2="57" marker-end="url(#ag)"/>
+    <line x1="807" y1="57" x2="826" y2="57" marker-end="url(#ag)"/>
+  </g>
+
+  <g fill="none" stroke="#287970" stroke-width="1.5">
+    <path d="M766 94 L766 134 L880 134 L880 95" marker-end="url(#at)"/>
+    <path d="M690 94 L690 170 L408 170 L408 95" marker-end="url(#at)"/>
+    <path d="M940 94 L940 206 L610 206 L610 176 A6 6 0 0 0 610 164 L610 95" marker-end="url(#at)"/>
+  </g>
+
+  <g fill="#287970" text-anchor="middle" font-size="11" font-weight="500">
+    <text x="823" y="127">好轨迹 → 进入训练</text>
+    <text x="540" y="163">坏轨迹 → 回流评测集</text>
+    <text x="756" y="199">更复杂的业务 · 下一轮</text>
+  </g>
+</svg>

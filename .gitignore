@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environments and local secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Builds
+build/
+dist/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Kochab runtime state and generated artifacts
+.kochab/
+.kochab.backup-*/
+examples/**/traces/
+evolution-pack/
