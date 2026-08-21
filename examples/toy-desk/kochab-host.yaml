@@ -1,0 +1,24 @@
+surface:
+  units:
+    - id: system
+      category: knowledge
+      path: surface/SYSTEM.md
+      format: markdown
+eval:
+  command: ["{python}", "eval/run.py"]
+  list_args: ["--list"]
+  run_args: ["--surface-dir", "{surface_dir}", "--cases", "{case_ids}"]
+  criteria_path: eval/CRITERIA.md
+  cases_path: eval/cases.json
+  dependency_paths: [eval/run.py]
+trace:
+  kind: otlp-json
+  path: traces/otel.jsonl
+gate:
+  holdout_ids:
+    - ho_loan
+    - ho_renew
+    - ho_fine
+    - ho_ref
+    - ho_ill
+    - ho_child
