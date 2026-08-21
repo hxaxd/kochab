@@ -1,0 +1,114 @@
+[
+  {
+    "id": "tr_loan",
+    "label": "loan period",
+    "question": "How long can I keep a normal book?",
+    "must_include": ["21 days"],
+    "gold": "Circulating books are loaned for 21 days."
+  },
+  {
+    "id": "tr_renew",
+    "label": "renewals",
+    "question": "Can I renew a book? How many times?",
+    "must_include": ["3"],
+    "gold": "A loan may be renewed up to 3 times if no hold is waiting."
+  },
+  {
+    "id": "tr_fine",
+    "label": "late fee",
+    "question": "What's the late fee?",
+    "must_include": ["0.25"],
+    "gold": "The late fee (overdue fine) is $0.25 per item per day, capped at $10 per item."
+  },
+  {
+    "id": "tr_fine_cap",
+    "label": "fine cap",
+    "question": "Is there a maximum fine for one item?",
+    "must_include": ["$10"],
+    "gold": "The late fee (overdue fine) is $0.25 per item per day, capped at $10 per item."
+  },
+  {
+    "id": "tr_ref",
+    "label": "reference",
+    "question": "Can I check out a reference book?",
+    "must_include": ["do not circulate"],
+    "gold": "Reference books and periodicals do not circulate."
+  },
+  {
+    "id": "tr_hold",
+    "label": "holds",
+    "question": "How long is a hold kept for me?",
+    "must_include": ["7 days"],
+    "gold": "Holds expire after 7 days."
+  },
+  {
+    "id": "tr_limit",
+    "label": "item limit",
+    "question": "How many items can I borrow?",
+    "must_include": ["20"],
+    "gold": "The default item limit is 20."
+  },
+  {
+    "id": "tr_ill",
+    "label": "ILL length",
+    "question": "How long is an interlibrary loan?",
+    "must_include": ["6 weeks"],
+    "gold": "Interlibrary loan (ILL) lasts 6 weeks and cannot be renewed."
+  },
+  {
+    "id": "tr_child",
+    "label": "child ILL",
+    "question": "My 10-year-old wants an interlibrary loan.",
+    "must_include": ["under 14"],
+    "gold": "Patrons under 14 may borrow at most 10 items and cannot use interlibrary loan (ILL)."
+  },
+  {
+    "id": "tr_lost",
+    "label": "lost item",
+    "question": "I lost a book. What extra fee do I pay?",
+    "must_include": ["$5"],
+    "gold": "A lost item costs replacement plus a $5 processing fee."
+  },
+  {
+    "id": "ho_loan",
+    "label": "holdout loan",
+    "question": "What is the standard loan period for circulating material?",
+    "must_include": ["21 days"],
+    "gold": "Circulating books are loaned for 21 days."
+  },
+  {
+    "id": "ho_renew",
+    "label": "holdout renew",
+    "question": "Renewal policy when nobody else is waiting?",
+    "must_include": ["3"],
+    "gold": "A loan may be renewed up to 3 times if no hold is waiting."
+  },
+  {
+    "id": "ho_fine",
+    "label": "holdout fine",
+    "question": "Daily overdue charge per item?",
+    "must_include": ["0.25"],
+    "gold": "The late fee (overdue fine) is $0.25 per item per day, capped at $10 per item."
+  },
+  {
+    "id": "ho_ref",
+    "label": "holdout reference",
+    "question": "Do reference-room volumes leave the building?",
+    "must_include": ["do not circulate"],
+    "gold": "Reference books and periodicals do not circulate."
+  },
+  {
+    "id": "ho_ill",
+    "label": "holdout ILL",
+    "question": "ILL duration and whether those loans renew?",
+    "must_include": ["6 weeks"],
+    "gold": "Interlibrary loan (ILL) lasts 6 weeks and cannot be renewed."
+  },
+  {
+    "id": "ho_child",
+    "label": "holdout child cap",
+    "question": "Item cap for a 12-year-old patron?",
+    "must_include": ["10 items"],
+    "gold": "Patrons under 14 may borrow at most 10 items and cannot use interlibrary loan (ILL)."
+  }
+]

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kochab"
+version = "0.1.0"
+description = "Harness-agnostic agent that tunes a host from eval and traces."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "苏紫辰" }]
+keywords = ["agents", "evals", "opentelemetry", "prompt-optimization", "llmops"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "openai>=1.40",
+    "opentelemetry-proto>=1.27",
+    "pydantic>=2.7",
+    "protobuf>=5",
+    "pyyaml>=6.0",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+kochab = "kochab.cli:app"
+
+[project.urls]
+Repository = "https://github.com/hxaxd/kochab"
+Issues = "https://github.com/hxaxd/kochab/issues"
+Documentation = "https://github.com/hxaxd/kochab#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kochab"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/kochab/prompts/evolve.md" = "kochab/prompts/evolve.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
