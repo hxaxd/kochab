@@ -1,3 +1,4 @@
-"""Kochab: evaluation-driven harness evolution, with local skill-candidate tools."""
+"""Kochab: 用最少的通用接口讲清模型能力建设的闭环。"""
 
+# 包版本只标识接口发布版本，不表示某个领域 Benchmark 的版本。
 __version__ = "0.1.0"

@@ -1,16 +1,19 @@
+# 声明构建本 Python 包所需的构建后端。
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["hatchling"] # 构建时安装；不是项目运行依赖。
+build-backend = "hatchling.build" # 由 Hatchling 生成 wheel 和源码包。
 
+# 包元数据定义安装名称、文档入口和支持的 Python 版本。
 [project]
-name = "kochab"
-version = "0.1.0"
-description = "Evaluation-driven harness evolution: reference abstractions and local skill tools."
-readme = "README.md"
-license = "MIT"
-requires-python = ">=3.10"
-authors = [{ name = "hxaxd" }]
-keywords = ["agents", "evals", "prompt-optimization"]
+name = "kochab" # 安装后通过此发行包名称识别项目。
+version = "0.1.0" # 发行版本，与 src/kochab/__init__.py 对应。
+description = "A teaching repository for benchmarks, agent evolution and data feedback." # 包的简短用途。
+readme = "README.md" # 在包索引中展示的项目说明。
+license = "MIT" # 本仓库的开源许可。
+requires-python = ">=3.10" # 核心代码所需的最低 Python 版本。
+authors = [{ name = "hxaxd" }] # 包的作者信息。
+keywords = ["agents", "evals", "prompt-optimization"] # 便于包索引分类和搜索。
+# 发行包支持的 Python 版本和大致项目分类。
 classifiers = [
     "Development Status :: 3 - Alpha",
     "License :: OSI Approved :: MIT License",
@@ -21,17 +24,14 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Testing",
 ]
-dependencies = [
-    "typer>=0.12",
-]
+dependencies = [] # 核心接口没有运行时第三方依赖。
 
-[project.scripts]
-kochab = "kochab.local.cli:main"
-
+# 提供源代码仓库、问题反馈和文档的公开地址。
 [project.urls]
 Repository = "https://github.com/hxaxd/kochab"
 Issues = "https://github.com/hxaxd/kochab/issues"
 Documentation = "https://github.com/hxaxd/kochab#readme"
 
+# wheel 只打包可复用核心；独立教学示例不作为安装后的库依赖。
 [tool.hatch.build.targets.wheel]
 packages = ["src/kochab"]

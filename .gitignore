@@ -25,9 +25,3 @@ dist/
 .vscode/
 .DS_Store
 Thumbs.db
-
-# Kochab runtime state and generated artifacts
-.kochab/
-.kochab.backup-*/
-examples/**/traces/
-evolution-pack/
