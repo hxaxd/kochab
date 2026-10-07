@@ -1,0 +1,7 @@
+interface:
+  display_name: "技能效果评测"
+  short_description: "按用户指定任务使用技能效果评测，按需读取资料并核实结果"
+  default_prompt: "Use $skill-evaluation for the user-requested task within its stated scope."
+
+policy:
+  allow_implicit_invocation: false
